@@ -81,10 +81,12 @@ The following installation instructions/steps are for cases when users are pulli
 dockerhub instead of building any images from source code.
 
 1. Install docker-compose - https://docs.docker.com/compose/install/
-2. Create a subdirectory named ligo_app.
-3. In this subdirectory create a subdirectory named files and within files directory create a subdirectory 
+2. Create a subdirectory named ligo_app. 
+
+ 3. In this subdirectory create a subdirectory named files and within files directory create a subdirectory 
 with the name 'media'.
-4. Ligo expects data files and resources in certain pre-defined locations. 
+
+ 4. Ligo expects data files and resources in certain pre-defined locations. 
 Under the ligo_app/files/media/ subdirectory, create a subdirectory named 'linking' and another subdirectory 
 named 'datasets'. Basically run the following command in the application root (ligo_app folder):
 
