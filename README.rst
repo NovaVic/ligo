@@ -72,10 +72,6 @@ The application has been containerized to support repeatablity in development pr
 deployment - a refactoring to support leveraging scaling within a Kubernetes cluster is in the roadmap.
 
 
-Folder Structure
-~~~~~~~~~~~~~~~~
-
-
 
 The following installation instructions/steps are for cases when users are pulling docker images from 
 dockerhub instead of building any images from source code.
@@ -107,11 +103,13 @@ dockerhub instead of building any images from source code.
 If you are able to log in then you successfully installed the software on your system. Enjoy de-duplication and linking!
 
 
-If you are not contributing to the source code of Ligo then you can easily ignore all the following sub-sections.
+
+
+If you are not contributing to the source code of Ligo then you can easily ignore all the following sections.
 
 
 Environment Variables (Only for developers modifying source code)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------------
 
 The following environment variables are required for project settings:
 
@@ -146,8 +144,7 @@ You can use the env.example files as a template for creating your environment va
 
 
 Docker
-~~~~~~
-
+------
 To recreate the docker containers use the following command (due to the content of the docker-compose file the 
 --build option in the following command has no effect):
 
