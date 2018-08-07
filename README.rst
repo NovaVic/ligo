@@ -77,18 +77,16 @@ Folder Structure
 
 
 
-The following installation instructions/steps are for cases when users are pulling docker images from dockerhub instead of building any images from source code.
+The following installation instructions/steps are for cases when users are pulling docker images from 
+dockerhub instead of building any images from source code.
 
 1. Install docker-compose - https://docs.docker.com/compose/install/
-
 2. Create a subdirectory named ligo_app.
-
-3. In this subdirectory create a subdirectory named files and within files directory create a subdirectory with the name 'media'.
-
+3. In this subdirectory create a subdirectory named files and within files directory create a subdirectory 
+with the name 'media'.
 4. Ligo expects data files and resources in certain pre-defined locations. 
-Under the ligo_app/files/media/ subdirectory, create a subdirectory named 'linking' and another subdirectory named 'datasets'.
-
-Basically run the following command in the application root (ligo_app folder):
+Under the ligo_app/files/media/ subdirectory, create a subdirectory named 'linking' and another subdirectory 
+named 'datasets'. Basically run the following command in the application root (ligo_app folder):
 
 .. code:: sh
 
@@ -98,7 +96,9 @@ Basically run the following command in the application root (ligo_app folder):
 
 6. Add read and write permission for everyone to the ligo_app/files/ directory and corresponding subdirectories with an instruction like
 
-chmod -R 777 ligo_app/files
+.. code:: sh
+
+    chmod -R 777 ligo_app/files
 
 7. Use a browser to download this docker-compose.yml and save the file into the directory ligo_app.
 
