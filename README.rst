@@ -80,35 +80,28 @@ Folder Structure
 The following installation instructions/steps are for cases when users are pulling docker images from 
 dockerhub instead of building any images from source code.
 
-1. Install docker-compose - https://docs.docker.com/compose/install/
-2. Create a subdirectory named ligo_app. 
-
- 3. In this subdirectory create a subdirectory named files and within files directory create a subdirectory 
-with the name 'media'.
-
- 4. Ligo expects data files and resources in certain pre-defined locations. 
-Under the ligo_app/files/media/ subdirectory, create a subdirectory named 'linking' and another subdirectory 
-named 'datasets'. Basically run the following command in the application root (ligo_app folder):
+* Install docker-compose - https://docs.docker.com/compose/install/
+* Create a subdirectory named ligo_app. 
+* In this subdirectory create a subdirectory named files and within files directory create a subdirectory with the name 'media'.
+* Ligo expects data files and resources in certain pre-defined locations. Under the ligo_app/files/media/ subdirectory, create a subdirectory named 'linking' and another subdirectory named 'datasets'. Basically run the following command in the application root (ligo_app folder):
 
 .. code:: sh
 
     mkdir -p files/media/datasets files/media/linking
 
-5. Put the files that you want to de-duplicate or link in the ligo_app/files/media/datasets subdirectory.
-
-6. Add read and write permission for everyone to the ligo_app/files/ directory and corresponding subdirectories with an instruction like
+* Put the files that you want to de-duplicate or link in the ligo_app/files/media/datasets subdirectory.
+* Add read and write permission for everyone to the ligo_app/files/ directory and corresponding subdirectories with an instruction like
 
 .. code:: sh
 
     chmod -R 777 ligo_app/files
 
-7. Use a browser to download this docker-compose.yml and save the file into the directory ligo_app.
+* Use a browser to download this docker-compose.yml and save the file into the directory ligo_app.
+* To run the application, change to the ligo_app directory where you put the docker-compose.yml file and type the following command (and press enter): docker-compose up 
 
-8. To run the application, change to the ligo_app directory where you put the docker-compose.yml file and type the following command (and press enter): docker-compose up 
+* You will see some text scroll by in the window as the application starts up. Once it has finished scrolling open a web browser like Edge/Firefox/Chrome and in the address bar type http://localhost:8002 and hit enter.
 
-9. You will see some text scroll by in the window as the application starts up. Once it has finished scrolling open a web browser like Edge/Firefox/Chrome and in the address bar type http://localhost:8002 and hit enter.
-
-10. Select "sign in" from top right-hand-side and login with username:baseuser password:Pass12345678 
+* Select "sign in" from top right-hand-side and login with username:baseuser password:Pass12345678 
 
 
 If you are able to log in then you successfully installed the software on your system. Enjoy de-duplication and linking!
